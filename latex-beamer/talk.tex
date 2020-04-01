@@ -1,0 +1,63 @@
+%!TEX TS-program = ./make.zsh
+
+\documentclass[green, 12pt]{beamer}
+
+% https://gist.github.com/andrejbauer/ac361549ac2186be0cdb
+%\setbeameroption{show notes}
+
+\newlength{\mypaperwidth}\setlength{\mypaperwidth}{200mm}
+%\geometry{paperwidth=\mypaperwidth,paperheight=0.625\mypaperwidth} % 16:10
+\geometry{paperwidth=\mypaperwidth,paperheight=0.7\mypaperwidth}
+
+\title[Monopole-Generator Review, \url{https://github.com/fiedl/monopole-generator/issues/1}]{Update on the Monopole-Generator Review}
+\subtitle{Software Call 2019-10-30}
+\date{\today \\ \vspace*{2mm} \tiny{Document 2019-eeQua1zo} \normalsize}
+
+\author[Sebastian Fiedlschuster]{Sebastian Fiedlschuster \\ \small\url{https://github.com/fiedl/monopole-generator/issues/1} \\
+\small\url{sebastian.fiedlschuster@fau.de}}
+\institute{Erlangen Centre for Astroparticle Physics}
+
+\newif\ifplacelogo % create a new conditional
+\placelogotrue % set it to true
+\logo{\ifplacelogo
+  \raisebox{-0.12cm}{\includegraphics[height=0.9cm]{img/DEgov-BMBF-Logo_en}}\hspace{0.3cm}
+  %\raisebox{-0.12cm}{\includegraphics[height=1cm]{img/icecube}}\hspace{0.3cm}
+  \raisebox{-0.12cm}{\includegraphics[height=1cm]{img/icecube-logo-side-text}}\hspace{0.3cm}
+  % \raisebox{-0.1cm}{\includegraphics[height=1cm]{img/DESY_logo_3C_web}}\hspace{0.5cm}
+  \raisebox{-0.1cm}{\includegraphics[height=1cm]{img/ecap}}\hspace{0.3cm}
+  \includegraphics[height=0.75cm]{img/Logo_FAU_DinA4_RGB}
+\fi}
+
+\input{lib/graphics}
+\input{lib/tikz}
+\input{lib/listings}
+\input{lib/tabular}
+\input{lib/beamer}
+\input{lib/utf8}
+\input{lib/units}
+\input{lib/todo}
+\input{lib/icons}
+\input{lib/hyperlinks}
+
+%\includeonly{}
+
+\begin{document}
+
+% Warning: Do not indent \frame statements.
+% This can lead to "Fatal error occurred, no output PDF file produced!"
+% https://tex.stackexchange.com/a/225582/70789
+
+\input{text/titlepage}
+
+\placelogofalse
+
+\section{Introduction}
+\input{text/prefix}
+
+\section{Conclusion}
+\input{text/thanks}
+
+%\appendix
+%\section{Backup slides}
+
+\end{document}
